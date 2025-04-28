@@ -42,6 +42,17 @@
 3. 각 노트북을 순서대로 실습
 4. (선택) Azure 구독 및 OpenAI, AKS, ACR 리소스 준비
 
+## GitHub Codespaces에서 실습하기
+
+이 리포지토리는 GitHub Codespaces 환경에서 바로 실행할 수 있습니다. Codespaces를 사용하면 별도의 로컬 환경 설정 없이 웹 브라우저에서 주피터 노트북을 바로 실행하고 실습할 수 있습니다.
+
+1. 이 리포지토리를 GitHub에서 엽니다.
+2. [Code] 버튼을 클릭하고 [Codespaces] 탭에서 [Create codespace on main]을 선택합니다.
+3. Codespaces 환경이 준비되면, VS Code 웹 또는 Jupyter 인터페이스에서 노트북(.ipynb) 파일을 실행하세요.
+4. 필요한 경우 터미널에서 `pip install -r requirements.txt`로 패키지를 설치하세요.
+
+---
+
 ## 참고 자료
 - [Microsoft AutoGen 공식 문서](https://microsoft.github.io/autogen/)
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/)
