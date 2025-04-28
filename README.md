@@ -49,7 +49,32 @@
 1. 이 리포지토리를 GitHub에서 엽니다.
 2. [Code] 버튼을 클릭하고 [Codespaces] 탭에서 [Create codespace on main]을 선택합니다.
 3. Codespaces 환경이 준비되면, VS Code 웹 또는 Jupyter 인터페이스에서 노트북(.ipynb) 파일을 실행하세요.
-4. 필요한 경우 터미널에서 `pip install -r requirements.txt`로 패키지를 설치하세요.
+4. **노트북 실행 전, 상단의 [Select Kernel] 버튼을 클릭해 Python 3.x 커널을 선택하세요.**
+5. 필요한 경우 터미널에서 `pip install -r requirements.txt`로 패키지를 설치하세요.
+
+## Azure OpenAI 환경 변수 설정
+
+실습을 위해 아래와 같이 `.env` 파일을 생성하고, 본인의 Azure OpenAI 서비스 정보로 값을 입력하세요.
+
+```
+AZURE_OPENAI_ENDPOINT=
+AZURE_OPENAI_API_KEY=
+AZURE_OPENAI_API_VERSION=
+AZURE_OPENAI_DEPLOYMENT_NAME=
+```
+
+- 위 값들은 Azure Portal에서 본인 구독의 OpenAI 리소스 정보를 참고하여 입력해야 합니다.
+- `.env` 파일은 리포지토리 루트(최상위 폴더)에 위치해야 하며, 절대 민감 정보(키 등)를 외부에 공개하지 마세요.
+
+### Azure OpenAI 리소스 생성 방법 (간단 안내)
+
+1. [Azure Portal](https://portal.azure.com/)에 로그인합니다.
+2. "리소스 만들기"에서 "Azure OpenAI"를 검색해 리소스를 생성합니다.
+3. 리소스 내에서 "키 및 엔드포인트" 메뉴에서 엔드포인트와 API 키를 확인합니다.
+4. "모델 배포" 메뉴에서 원하는 모델(gpt-4o 등)을 배포하고, 배포 이름을 확인합니다.
+5. 위 정보를 `.env` 파일에 입력합니다.
+
+자세한 내용은 [Azure OpenAI Service 공식 문서](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart)도 참고하세요.
 
 ---
 
