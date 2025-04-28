@@ -1,6 +1,6 @@
 # Intelligent App Hands-on Lab
 
-이 리포지토리는 Azure OpenAI, AutoGen, GitHub Copilot, Docker, AKS 등 최신 AI 및 클라우드 기술을 활용한 지능형 애플리케이션 실습을 단계별로 제공합니다.
+이 리포지토리는 Azure OpenAI, AutoGen, GitHub Copilot, Docker, Azure Kubernetes Service 등 최신 AI 및 클라우드 기술을 활용한 지능형 애플리케이션 실습을 단계별로 제공합니다.
 
 ## 구성
 
@@ -37,22 +37,24 @@
 
 ## 빠른 시작
 
-1. Python 3.10+ 및 Docker Desktop 설치
-2. `requirements.txt` 기반 패키지 설치
-3. 각 노트북을 순서대로 실습
-4. (선택) Azure 구독 및 OpenAI, AKS, ACR 리소스 준비
+1. Azure 구독 및 Azure OpenAI, AKS, ACR 리소스 준비
+2. GitHub Codespaces 환경 생성
+3. Azure OpenAI 환경변수 설정
+4. 각 노트북을 순서대로 실습
 
-## GitHub Codespaces에서 실습하기
+## GitHub Codespaces 환경 생성
+
+GitHub Codespaces는 GitHub에서 제공하는 클라우드 기반 개발 환경으로, 별도의 로컬 설치 없이 웹 브라우저에서 바로 개발과 실습이 가능합니다. Codespaces 환경에는 이미 git, docker, kubectl, helm, python, pip, curl, wget 등 주요 개발 및 DevOps 도구가 사전 설치되어 있어, 추가 설치 없이 바로 실습을 시작할 수 있습니다.
 
 이 리포지토리는 GitHub Codespaces 환경에서 바로 실행할 수 있습니다. Codespaces를 사용하면 별도의 로컬 환경 설정 없이 웹 브라우저에서 주피터 노트북을 바로 실행하고 실습할 수 있습니다.
 
 1. 이 리포지토리를 GitHub에서 엽니다.
 2. [Code] 버튼을 클릭하고 [Codespaces] 탭에서 [Create codespace on main]을 선택합니다.
-3. Codespaces 환경이 준비되면, VS Code 웹 또는 Jupyter 인터페이스에서 노트북(.ipynb) 파일을 실행하세요.
-4. **노트북 실행 전, 상단의 [Select Kernel] 버튼을 클릭해 Python 3.x 커널을 선택하세요.**
-5. 필요한 경우 터미널에서 `pip install -r requirements.txt`로 패키지를 설치하세요.
+3. Codespaces 환경이 준비되면, 다음 안내에 따라, 필요한 확장 프로그램과 Python 커널을 선택합니다.
+4. **노트북 실행 전, Codespaces의 안내에 따라 'Python'과 'Jupyter' 확장 프로그램을 설치하세요.**
+5. **상단의 [Select Kernel] 버튼을 클릭해 Python 3.x 커널을 선택하세요.**
 
-## Azure OpenAI 환경 변수 설정
+## Azure OpenAI 환경변수 설정
 
 실습을 위해 아래와 같이 `.env` 파일을 생성하고, 본인의 Azure OpenAI 서비스 정보로 값을 입력하세요.
 
@@ -74,12 +76,12 @@ AZURE_OPENAI_DEPLOYMENT_NAME=
 4. "모델 배포" 메뉴에서 원하는 모델(gpt-4o 등)을 배포하고, 배포 이름을 확인합니다.
 5. 위 정보를 `.env` 파일에 입력합니다.
 
-자세한 내용은 [Azure OpenAI Service 공식 문서](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart)도 참고하세요.
+자세한 내용은 [Azure OpenAI Service Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?tabs=keyless%2Ctypescript-keyless%2Cpython-new%2Ccommand-line&pivots=programming-language-python)도 참고하세요.
 
 ---
 
 ## 참고 자료
-- [Microsoft AutoGen 공식 문서](https://microsoft.github.io/autogen/)
+- [Microsoft AutoGen](https://microsoft.github.io/autogen/)
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/)
 - [Azure Kubernetes Service](https://learn.microsoft.com/azure/aks/)
 - [GitHub Copilot](https://docs.github.com/en/copilot)
