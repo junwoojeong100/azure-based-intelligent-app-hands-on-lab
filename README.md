@@ -54,7 +54,7 @@ GitHub Codespaces는 GitHub에서 제공하는 클라우드 기반 개발 환경
 4. **노트북 실행 전, Codespaces의 안내에 따라 'Python'과 'Jupyter' 확장 프로그램을 설치하세요.**
 5. **상단의 [Select Kernel] 버튼을 클릭해 Python 3.x 커널을 선택하세요.**
 
-- [GitHub Codespaces Quickstart 공식 문서](https://docs.github.com/en/codespaces/getting-started/quickstart)
+자세한 내용은 [GitHub Codespaces Quickstart](https://docs.github.com/en/codespaces/getting-started/quickstart)을 참고하세요.
 
 ## Azure OpenAI 환경변수 설정
 
@@ -78,7 +78,7 @@ AZURE_OPENAI_DEPLOYMENT_NAME=
 4. "모델 배포" 메뉴에서 원하는 모델(gpt-4o 등)을 배포하고, 배포 이름을 확인합니다.
 5. 위 정보를 `.env` 파일에 입력합니다.
 
-자세한 내용은 [Azure OpenAI Service Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?tabs=keyless%2Ctypescript-keyless%2Cpython-new%2Ccommand-line&pivots=programming-language-python)도 참고하세요.
+자세한 내용은 [Azure OpenAI Service Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?tabs=keyless%2Ctypescript-keyless%2Cpython-new%2Ccommand-line&pivots=programming-language-python)을 참고하세요.
 
 ---
 
