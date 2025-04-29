@@ -4,15 +4,15 @@
 
 ## 구성
 
-- **1.LLM_PromptEngineering.ipynb**
+- **01-getting-started-with-prompt-engineering-for-llm.ipynb**
   - LLM(대형 언어 모델)과 프롬프트 엔지니어링의 기본 개념 및 실습
   - Azure OpenAI API 활용 예제
 
-- **2.GitHubCopilot_AutoGen.ipynb**
+- **02-building-autogen-app-with-github-copilot.ipynb**
   - GitHub Copilot Agent Mode와 AutoGen 프레임워크를 활용한 멀티 에이전트 앱 구현
   - 여행 플래너 Multi-Agent 예제 실습
 
-- **3.Container_ACR_AKS.ipynb**
+- **03-deploying-to-aks-using-docker-and-acr.ipynb**
   - 여행 플래너 앱을 Docker 컨테이너로 빌드
   - Azure Container Registry(ACR) 및 Azure Kubernetes Service(AKS)로 배포
   - Log Analytics를 통한 컨테이너 로그 조회
@@ -22,15 +22,15 @@
 
 ## 실습 주요 흐름
 
-1. **LLM 및 프롬프트 엔지니어링**
+1. **LLM을 위한 Prompt Engineering 시작**
    - LLM의 원리와 프롬프트 설계법 실습
    - Azure OpenAI API 엔드포인트 활용
 
-2. **멀티 에이전트 앱 개발**
-   - AutoGen 기반 여행 플래너 Multi-Agent 시스템 구현
+2. **GitHub Copilot을 활용한 AutoGen 기반 Multi AI Agent 앱 개발**
+   - AutoGen 기반 여행 플래너 Multi AI 에이전트 앱 구현
    - 다양한 역할의 AI 에이전트 협업 구조 설계
 
-3. **컨테이너화 및 클라우드 배포**
+3. **Docker와 ACR을 사용해서 AKS에 앱 배포 및 실행**
    - Dockerfile 작성 및 이미지 빌드
    - ACR/AKS를 통한 클라우드 배포
    - Log Analytics로 운영 로그 모니터링
