@@ -54,6 +54,8 @@ GitHub Codespaces는 GitHub에서 제공하는 클라우드 기반 개발 환경
 4. **노트북 실행 전, Codespaces의 안내에 따라 'Python'과 'Jupyter' 확장 프로그램을 설치하세요.**
 5. **상단의 [Select Kernel] 버튼을 클릭해 Python 3.x 커널을 선택하세요.**
 
+- [GitHub Codespaces Quickstart 공식 문서](https://docs.github.com/en/codespaces/getting-started/quickstart)
+
 ## Azure OpenAI 환경변수 설정
 
 실습을 위해 아래와 같이 `.env` 파일을 생성하고, 본인의 Azure OpenAI 서비스 정보로 값을 입력하세요.
@@ -85,7 +87,7 @@ AZURE_OPENAI_DEPLOYMENT_NAME=
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/)
 - [Azure Kubernetes Service](https://learn.microsoft.com/azure/aks/)
 - [GitHub Copilot](https://docs.github.com/en/copilot)
-
+- [GitHub Codespaces](https://docs.github.com/en/codespaces)
 ---
 
 이 리포지토리는 교육 및 실습 목적이며, 실제 서비스 배포 시에는 보안 및 운영 환경을 추가로 고려해야 합니다.
