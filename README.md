@@ -1,4 +1,4 @@
-# Intelligent App Hands-on Lab
+# Azure-based Intelligent App Hands-on Lab
 
 이 리포지토리는 Azure OpenAI, AutoGen, GitHub Copilot, Docker, Azure Kubernetes Service 등 최신 AI 및 클라우드 기술을 활용한 지능형 애플리케이션 실습을 단계별로 제공합니다.
 
