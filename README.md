@@ -4,42 +4,39 @@
 
 ## 구성
 
-- **01-getting-started-with-prompt-engineering-for-llm.ipynb**
-  - LLM(대형 언어 모델)과 프롬프트 엔지니어링의 기본 개념 및 실습
-  - Azure OpenAI API 활용 예제
+- **README.md**
+  - 실습 전체의 흐름, 환경 준비, 단계별 실습 방법, 주요 파일 안내 등 전반적인 가이드 역할을 하는 문서입니다.
+  - 실습 시작 전 반드시 읽고, 안내에 따라 환경을 설정하세요.
 
-- **02-building-autogen-app-with-github-copilot.ipynb**
-  - GitHub Copilot Agent Mode와 AutoGen 프레임워크를 활용한 멀티 에이전트 앱 구현
-  - 여행 플래너 Multi-Agent 예제 실습
-
-- **03-deploying-to-aks-using-docker-and-acr.ipynb**
-  - 여행 플래너 앱을 Docker 컨테이너로 빌드
-  - Azure Container Registry(ACR) 및 Azure Kubernetes Service(AKS)로 배포
-  - Log Analytics를 통한 컨테이너 로그 조회
+- **.env**
+  - Azure OpenAI 연동을 위한 엔드포인트, API 키 등 환경 변수 정보를 담는 파일입니다.
+  - 민감 정보가 포함되므로 외부에 노출되지 않도록 주의하세요.
 
 - **requirements.txt**
-  - 실습에 필요한 주요 파이썬 패키지 목록
+  - 실습에 필요한 주요 파이썬 패키지 목록이 정리되어 있습니다.
 
-## 실습 주요 흐름
+- **01-getting-started-with-prompt-engineering-for-llm.ipynb**
+  - LLM(대형 언어 모델)과 프롬프트 엔지니어링의 기본 개념 및 실습을 다룹니다.
+  - Azure OpenAI API 활용 예제를 포함합니다.
 
-1. **LLM을 위한 Prompt Engineering 시작**
-   - LLM의 원리와 프롬프트 설계법 실습
-   - Azure OpenAI API 엔드포인트 활용
+- **02-building-autogen-app-with-github-copilot.ipynb**
+  - GitHub Copilot Agent Mode와 AutoGen 프레임워크를 활용한 멀티 에이전트 앱 구현 실습입니다.
+  - 여행 플래너 Multi-Agent 예제를 다룹니다.
 
-2. **GitHub Copilot을 활용한 AutoGen 기반 Multi AI Agent 앱 개발**
-   - AutoGen 기반 여행 플래너 Multi AI 에이전트 앱 구현
-   - 다양한 역할의 AI 에이전트 협업 구조 설계
+- **03-deploying-to-aks-using-docker-and-acr.ipynb**
+  - 여행 플래너 앱을 Docker 컨테이너로 빌드하고, Azure Container Registry(ACR) 및 Azure Kubernetes Service(AKS)로 배포하는 과정을 실습합니다.
+  - Log Analytics를 통한 컨테이너 로그 조회 방법도 포함되어 있습니다.
 
-3. **Docker와 ACR을 사용해서 AKS에 앱 배포 및 실행**
-   - Dockerfile 작성 및 이미지 빌드
-   - ACR/AKS를 통한 클라우드 배포
-   - Log Analytics로 운영 로그 모니터링
+- **travel_planning_agent.py**
+  - 여행 플래너 Multi-Agent의 핵심 로직이 구현된 파이썬 소스 파일입니다.
+  - 에이전트 간 상호작용 및 여행 일정 추천 기능을 담당합니다.
+
 
 ## 빠른 시작
 
-1. Azure 구독 및 Azure OpenAI, AKS, ACR 리소스 준비
-2. GitHub Codespaces 환경 생성
-3. Azure OpenAI 환경변수 설정
+1. Azure 구독 준비
+2. GitHub Codespaces 환경 생성 (아래 'GitHub Codespaces 환경 생성' 섹션 참고)
+3. Azure OpenAI 환경변수 설정 (아래 'Azure OpenAI 환경변수 설정' 섹션 참고)
 4. 각 노트북을 순서대로 실습
 
 ## GitHub Codespaces 환경 생성
@@ -70,20 +67,28 @@ AZURE_OPENAI_DEPLOYMENT_NAME=
 - 위 값들은 Azure Portal에서 본인 구독의 OpenAI 리소스 정보를 참고하여 입력해야 합니다.
 - `.env` 파일은 리포지토리 루트(최상위 폴더)에 위치해야 하며, 절대 민감 정보(키 등)를 외부에 공개하지 마세요.
 
-### Azure OpenAI 리소스 생성 방법 (간단 안내)
+### Azure OpenAI 리소스 생성 및 gpt-4o mini 모델 배포 방법 (요약)
 
 1. [Azure Portal](https://portal.azure.com/)에 로그인합니다.
-2. "리소스 만들기"에서 "Azure OpenAI"를 검색해 리소스를 생성합니다.
-3. 리소스 내에서 "키 및 엔드포인트" 메뉴에서 엔드포인트와 API 키를 확인합니다.
-4. "모델 배포" 메뉴에서 원하는 모델(gpt-4o 등)을 배포하고, 배포 이름을 확인합니다.
-5. 위 정보를 `.env` 파일에 입력합니다.
+2. "리소스 만들기"에서 "Azure AI Foundry"를 검색해 리소스를 생성합니다.
+3. 리소스 내에서 "모델" 메뉴로 이동하여 **gpt-4o mini** 모델을 선택합니다.
+4. "배포" 버튼을 클릭하여 모델을 배포하고, 배포 이름을 지정합니다.
+5. "엔드포인트 및 키" 메뉴에서 엔드포인트와 API 키를 확인합니다.
+6. 위 정보를 `.env` 파일에 입력합니다.
 
-자세한 내용은 [Azure OpenAI Service Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?tabs=keyless%2Ctypescript-keyless%2Cpython-new%2Ccommand-line&pivots=programming-language-python)을 참고하세요.
+#### gpt-4o mini 모델 특장점
+- **경량화**: 기존 GPT-4 계열 대비 훨씬 가볍고 빠른 응답 속도를 제공합니다.
+- **비용 효율성**: 적은 리소스로도 높은 성능을 발휘해 실습 및 프로토타이핑에 적합합니다.
+- **멀티모달 지원**: 텍스트뿐 아니라 이미지 등 다양한 입력을 처리할 수 있습니다.
+- **최신 아키텍처**: 최신 GPT-4o 기반의 아키텍처로, 자연스러운 대화와 다양한 태스크에 강점을 가집니다.
+
+자세한 내용은 [Azure AI Foundry에서 OpenAI 모델 배포 가이드](https://learn.microsoft.com/ko-kr/azure/ai-foundry/how-to/deploy-models-openai)를 참고하세요.
 
 ---
 
 ## 참고 자료
 - [Microsoft AutoGen](https://microsoft.github.io/autogen/)
+- [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/)
 - [Azure Kubernetes Service](https://learn.microsoft.com/azure/aks/)
 - [GitHub Copilot](https://docs.github.com/en/copilot)
