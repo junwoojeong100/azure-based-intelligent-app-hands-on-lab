@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: travel-planning-agent-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: travel-planning-agent-app
+  template:
+    metadata:
+      labels:
+        app: travel-planning-agent-app
+    spec:
+      containers:
+      - name: travel-planning-agent-app
+        image: myacr05022025.azurecr.io/travel-planning-agent-app:v1  # 실제 ACR 경로(myacr05022025.azurecr.io)는 반드시 본인만의 고유한 이름으로 교체하세요. (중복 불가)
