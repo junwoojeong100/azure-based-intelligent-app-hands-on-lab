@@ -49,7 +49,7 @@ GitHub Codespaces는 GitHub에서 제공하는 클라우드 기반 개발 환경
 이 리포지토리는 GitHub Codespaces 환경에서 바로 실행할 수 있습니다. Codespaces를 사용하면 별도의 로컬 환경 설정 없이 웹 브라우저에서 주피터 노트북을 바로 실행하고 실습할 수 있습니다.
 
 1. 이 리포지토리를 GitHub에서 엽니다.
-2. [Code] 버튼을 클릭하고 [Codespaces] 탭에서 [Create codespace on main]을 선택합니다.
+2. [Code] 버튼을 클릭하고 [Codespaces] 탭에서 [Create codespace on master]을 선택합니다.
 3. Codespaces 환경이 준비되면, 다음 안내에 따라, 필요한 확장 프로그램과 Python 커널을 선택합니다.
 4. **노트북 실행 전, Codespaces의 안내에 따라 'Python'과 'Jupyter' 확장 프로그램을 설치하세요.**
 5. **상단의 [Select Kernel] 버튼을 클릭해 Python 3.x 커널을 선택하세요.**
@@ -90,12 +90,12 @@ AZURE_OPENAI_DEPLOYMENT_NAME=
 ---
 
 ## 참고 자료
-- [Microsoft AutoGen](https://microsoft.github.io/autogen/)
+- [GitHub Codespaces](https://docs.github.com/en/codespaces)
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/)
-- [Azure Kubernetes Service](https://learn.microsoft.com/azure/aks/)
 - [GitHub Copilot](https://docs.github.com/en/copilot)
-- [GitHub Codespaces](https://docs.github.com/en/codespaces)
+- [Microsoft AutoGen](https://microsoft.github.io/autogen/)
+- [Azure Kubernetes Service](https://learn.microsoft.com/azure/aks/)
 ---
 
 이 리포지토리는 교육 및 실습 목적이며, 실제 서비스 배포 시에는 보안 및 운영 환경을 추가로 고려해야 합니다.
