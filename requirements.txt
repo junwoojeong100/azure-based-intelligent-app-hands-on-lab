@@ -4,3 +4,6 @@ openai
 python-dotenv
 requests
 tiktoken
+azure-core
+azure-search-documents
+azure-storage-blob
