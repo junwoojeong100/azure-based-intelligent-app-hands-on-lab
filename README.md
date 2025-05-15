@@ -121,8 +121,8 @@ AZURE_OPENAI_EMBEDDING_DEPLOYMENT=
 - [GitHub Copilot](https://docs.github.com/en/copilot)
 - [Microsoft AutoGen](https://microsoft.github.io/autogen/)
 - [Azure Kubernetes Service](https://learn.microsoft.com/azure/aks/)
-- [Azure Blob Storage 공식 문서](https://learn.microsoft.com/azure/storage/blobs/)
-- [Azure AI Search 공식 문서](https://learn.microsoft.com/azure/search/)
+- [Azure Blob Storage](https://learn.microsoft.com/azure/storage/blobs/)
+- [Azure AI Search](https://learn.microsoft.com/azure/search/)
 ---
 
 이 리포지토리는 교육 및 실습 목적이며, 실제 서비스 배포 시에는 보안 및 운영 환경을 추가로 고려해야 합니다.
