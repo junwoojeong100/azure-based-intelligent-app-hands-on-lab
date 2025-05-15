@@ -34,7 +34,6 @@
 - **04-rag-with-azure-ai-search-and-openai.ipynb**
   - RAG(검색 증강 생성, Retrieval Augmented Generation)의 필요성과 개념을 설명합니다.
   - Azure Blob Storage, AI Search, OpenAI를 활용한 RAG 파이프라인(데이터 업로드, 인덱싱, 임베딩, 벡터 검색, LLM 답변 생성) 실습을 단계별로 제공합니다.
-  - 환경 변수 설정, Azure 리소스 준비, 예외 처리 등 실제 서비스 구현에 필요한 실전 가이드를 포함합니다.
 
 - **travel_planning_agent.py**
   - 여행 플래너 Multi-Agent의 핵심 로직이 구현된 파이썬 소스 파일입니다.
