@@ -64,10 +64,18 @@ GitHub Codespaces는 GitHub에서 제공하는 클라우드 기반 개발 환경
 이 리포지토리는 GitHub Codespaces 환경에서 바로 실행할 수 있습니다. Codespaces를 사용하면 별도의 로컬 환경 설정 없이 웹 브라우저에서 주피터 노트북을 바로 실행하고 실습할 수 있습니다.
 
 1. 이 리포지토리를 GitHub에서 엽니다.
-2. [Code] 버튼을 클릭하고 [Codespaces] 탭에서 [Create codespace on master]을 선택합니다.
-3. Codespaces 환경이 준비되면, 다음 안내에 따라, 필요한 확장 프로그램과 Python 커널을 선택합니다.
-4. **노트북 실행 전, Codespaces의 안내에 따라 'Python'과 'Jupyter' 확장 프로그램을 설치하세요.**
-5. **상단의 [Select Kernel] 버튼을 클릭해 Python 3.x 커널을 선택하세요.**
+2. [Code] 버튼을 클릭하고 [Codespaces] 탭에서 [Create codespace on master]를 선택합니다.
+3. Codespaces 환경이 준비되면, 필요한 확장 프로그램과 Python 커널을 선택합니다.
+4. **노트북 실행 전, Codespaces의 안내에 따라 'Python'과 'Jupyter' 확장 프로그램을 설치합니다.**
+5. **상단의 [Select Kernel] 버튼을 클릭해 Python 3.x 커널을 선택합니다.**
+6. **Python 가상환경(venv)을 생성합니다.**
+   - 메뉴를 통해 생성: VS Code/Codespaces에서 Python 버전 표시줄을 클릭 → [Python: Create Environment] 또는 [가상 환경 생성] 메뉴를 선택 → venv를 선택하고 위치를 지정합니다. 생성된 가상환경을 커널로 선택합니다.
+   - 또는 터미널에서 아래 명령어로 생성할 수 있습니다:
+     ```bash
+     python3 -m venv .venv
+     source .venv/bin/activate
+     ```
+   - 가상환경을 생성한 후, [Select Kernel]에서 해당 venv를 선택해 사용합니다.
 
 자세한 내용은 [GitHub Codespaces Quickstart](https://docs.github.com/en/codespaces/getting-started/quickstart)을 참고하세요.
 
