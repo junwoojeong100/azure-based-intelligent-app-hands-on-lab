@@ -43,19 +43,19 @@
 ## 빠른 시작
 
 1. Azure 구독 준비
-2. GitHub Codespaces 환경 생성 (아래 'GitHub Codespaces 환경 생성' 섹션 참고)
-3. Azure OpenAI 환경변수 설정 (아래 'Azure OpenAI 환경변수 설정' 섹션 참고)
-4. 각 노트북을 순서대로 실습
+2. GitHub, Azure 계정 및 권한 준비 (아래 '필수 계정 및 권한 준비' 섹션 참고)
+3. GitHub Codespaces 환경 생성 (아래 'GitHub Codespaces 환경 생성' 섹션 참고)
+4. Azure OpenAI 환경변수 설정 (아래 'Azure OpenAI 환경변수 설정' 섹션 참고)
+5. 각 노트북을 순서대로 실습
 
 
-## 필수 계정 및 권한 요약
+## 필수 계정 및 권한 준비
 
 - **GitHub 계정**: 모든 실습에 필요하며, Codespaces 사용을 위해 반드시 필요합니다. 
 - **Azure 계정**: 구독(Subscription) 또는 리소스 그룹(Resource Group)에 '기여자(Contributor)' 역할만 있으면 모든 실습(리소스 생성, 배포, 관리 등)이 가능합니다. Owner(소유자) 권한은 필요하지 않습니다.
   - Contributor는 리소스 생성/수정/삭제/배포/키 조회가 가능하며, 권한 부여/회수는 불가합니다.
 
 > [Azure Built-in 역할 설명: Contributor, Owner 등](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles) / [RBAC 개요](https://learn.microsoft.com/azure/role-based-access-control/overview)
-
 
 ## GitHub Codespaces 환경 생성
 
