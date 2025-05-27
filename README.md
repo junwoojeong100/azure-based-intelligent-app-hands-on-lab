@@ -51,7 +51,7 @@
 ## 필수 계정 및 권한 준비
 
 - **GitHub 계정**: 모든 실습에 필요하며, Codespaces 사용을 위해 반드시 필요합니다. 
-- **Azure 계정**: 구독(Subscription)에 '기여자(Contributor)' 역할이 있으면 모든 실습(리소스 생성, 배포, 관리 등)이 가능합니다.
+- **Azure 계정**: 모든 실습(리소스 생성, 배포, 관리 등)을 위해 구독(Subscription)에 '기여자(Contributor)' 역할이 필요합니다.
   - Contributor는 리소스 생성/수정/삭제/배포/키 조회가 가능하며, 권한 부여/회수는 불가합니다.
 
 > [Azure Built-in 역할 설명: Contributor, Owner 등](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles) / [RBAC 개요](https://learn.microsoft.com/azure/role-based-access-control/overview)
