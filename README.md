@@ -26,7 +26,6 @@
   - GitHub Copilot Agent Mode와 AutoGen 프레임워크를 활용한 멀티 에이전트 앱 구현 실습입니다.
   - 여행 플래너 Multi-Agent 예제를 다룹니다.
 
-
 - **03-deploying-to-aks-using-docker-and-acr.ipynb**
   - 여행 플래너 앱을 Docker 컨테이너로 빌드하고, Azure Container Registry(ACR) 및 Azure Kubernetes Service(AKS)로 배포하는 과정을 실습합니다.
   - Log Analytics를 통한 컨테이너 로그 조회 방법도 포함되어 있습니다.
@@ -52,7 +51,7 @@
 ## 필수 계정 및 권한 준비
 
 - **GitHub 계정**: 모든 실습에 필요하며, Codespaces 사용을 위해 반드시 필요합니다. 
-- **Azure 계정**: 구독(Subscription) 또는 리소스 그룹(Resource Group)에 '기여자(Contributor)' 역할만 있으면 모든 실습(리소스 생성, 배포, 관리 등)이 가능합니다. Owner(소유자) 권한은 필요하지 않습니다.
+- **Azure 계정**: 구독(Subscription)에 '기여자(Contributor)' 역할이 있으면 모든 실습(리소스 생성, 배포, 관리 등)이 가능합니다. Owner(소유자) 권한은 필요하지 않습니다.
   - Contributor는 리소스 생성/수정/삭제/배포/키 조회가 가능하며, 권한 부여/회수는 불가합니다.
 
 > [Azure Built-in 역할 설명: Contributor, Owner 등](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles) / [RBAC 개요](https://learn.microsoft.com/azure/role-based-access-control/overview)
